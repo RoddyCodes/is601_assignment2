@@ -1,5 +1,5 @@
 import pytest
-from app.operations import addition, division, multiplication, subtraction
+from app import addition, division, subtraction, multiplication
 
 
 def test_addition():
@@ -15,7 +15,7 @@ def test_multiplication():
 
 
 def test_division_positive():
-    assert division(1, 1) == 1
+    assert division(1, 1) == 1.0
 
 
 def test_division_by_zero():
