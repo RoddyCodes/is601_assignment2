@@ -2,7 +2,7 @@
 
 import sys
 from io import StringIO
-from app.calculator import calculator
+from app.calculator.__init__ import calculator
 
 
 # Helper function to capture print statements
