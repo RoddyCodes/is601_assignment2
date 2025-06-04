@@ -18,6 +18,6 @@ def test_division_positive():
     assert division(1, 1) == 1
 
 
-def test_division_negative():
-    with pytest.raises(ZeroDivisionError):
-        division(1, 0)
+def test_division_by_zero():
+    with pytest.raises(ValueError, match="Division by zero is not allowed"):
+        division(10, 0)
